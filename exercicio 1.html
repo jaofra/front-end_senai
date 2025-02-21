@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura Básica de Site</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilos do Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+        }
+
+        nav .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Estilos do container de texto e imagem */
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+        }
+
+        .content .text {
+            width: 50%;
+            font-size: 20px;
+            padding: 20px;
+        }
+
+            .content .image {
+            width: 50%;
+        }
+
+        .content .image img {
+            width: 100%;
+        }
+
+        /* Estilos do container de cards */
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+        }
+
+        .card {
+            width: 30%;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .card img {
+            width: 20%;
+            object-fit: contain;
+        }
+
+        .card h3 {
+            padding: 15px;
+        }
+
+        .card p {
+            padding: 0 15px 15px 15px;
+        }
+
+        /* Estilos do rodapé */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <div class="logo">Minha Logo</div>
+    <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li>
+    </ul>
+</nav>
+
+<!-- Container com metade texto e metade imagem -->
+<div class="content">
+    <div class="text">
+        <h1>Bem-vindo ao Nosso Site</h1>
+        <p>Este é um exemplo básico de como estruturar um site utilizando HTML. Aqui você pode ver a divisão entre texto
+            e imagem, bem como a apresentação de cards logo abaixo.</p>
+    </div>
+    <div class="image">
+        <img src="internaSenai.png" alt="Exemplo de imagem">
+    </div>
+</div>
+
+<!-- Container com 3 cards -->
+<div class="cards">
+    <div class="card">
+        <img src="speaker.png" alt="Imagem do Card 1">
+        <h3>Título do Card 1</h3>
+        <p>Esta é uma breve descrição do card 1.</p>
+    </div>
+    <div class="card">
+        <img src="phone-call.png" alt="Imagem do Card 2">
+        <h3>Título do Card 2</h3>
+        <p>Esta é uma breve descrição do card 2.</p>
+    </div>
+    <div class="card">
+        <img src="chat.png" alt="Imagem do Card 3">
+        <h3>Título do Card 3</h3>
+        <p>Esta é uma breve descrição do card 3.</p>
+    </div>
+</div>
+
+<!-- Rodapé -->
+<footer>
+    <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>

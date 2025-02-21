@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura Básica de Site</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- Navbar -->
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Estilos do Navbar */
+    /*nav {*/
+    /*    display: flex;*/
+    /*    justify-content: space-between;*/
+    /*    align-items: center;*/
+    /*    padding: 20px;*/
+    /*    background-color: #9D2235;*/
+    /*}*/
+
+    /*nav .logo {*/
+    /*    color: white;*/
+    /*    font-size: 24px;*/
+    /*    font-weight: bold;*/
+    /*}*/
+
+    /*nav ul {*/
+    /*    list-style: none;*/
+    /*    display: flex;*/
+    /*}*/
+
+    nav ul li {
+        margin-left: 20px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    /* Estilos do container de texto e imagem */
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .content .text {
+        width: 50%;
+        font-size: 20px;
+        padding: 20px;
+    }
+
+
+    /* Estilos do container de cards */
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+    }
+
+    .card {
+        width: 30%;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .card img {
+        width: 20%;
+        object-fit: contain;
+    }
+
+    .card h3 {
+        padding: 15px;
+    }
+
+    .card p {
+        padding: 0 15px 15px 15px;
+    }
+
+    /* Estilos do rodapé */
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+    }
+</style>
+<nav class="d-flex justify-content-between align-items-center p-2 bg-dark" >
+    <p class="text-light fs-24px fw-bold">kopenhagen</p>
+
+    <ul class="list-unstyled d-flex" >
+        <li><a class="link-opacity-10-hover" href="#">Link 1</a></li>
+        <li><a class="link-opacity-25-hover" href="#">Link 2</a></li>
+        <li><a class="link-opacity-50-hover" href="#">Link 3</a></li>
+        <li><a class="link-opacity-75-hover" href="#">Link 4</a></li>
+        <li><a class="link-opacity-100-hover" href="#">Link 5</a></li>
+
+    </ul>
+</nav>
+
+<!-- Container com metade texto e metade imagem -->
+<div class="content">
+    <div class="text">
+        <h1>Bem-vindo ao Nosso Site</h1>
+        <p>nosso site é destinado a mostrar um pouco da nossa
+            marca, para os amantes do nosso chocolate sintase a vontade</p>
+    </div>
+    <div class="image">
+        <img src="https://northshoppingbarretos.com.br/wp-content/uploads/2023/10/kopenhagen-logo-500x.png  "
+             alt="10vh">
+    </div>
+</div>
+
+<!-- Container com 3 cards -->
+<div class="cards">
+    <div class="card">
+        <img src="high-quality.png" alt="Imagem do Card 1">
+        <h3>Qualidade</h3>
+        <p>Kopenhagen é uma marca de 93 anos, uma das percursoras no segmento de
+            chocolate fino no Brasil, é reconhecida pela qualidade de seus produtos,</p>
+
+    </div>
+    <div class="card">
+        <img src="best-price%20(3).png" alt="Imagem do Card 2">
+        <h3>Preço bom</h3>
+    </div>
+    <div class="card">
+        <img src="change.png" alt="Imagem do Card 3">
+        <h3>variedade</h3>
+        <p>fólio com 150 produtos com a linha dos clássicos predominantemente artesanais, embalagens
+            sofisticadas e uma desejada opção de presentes..</p>
+    </div>
+</div>
+
+<!-- Rodapé -->
+<footer>
+    <p>&copy; 2025 Nosso Site. o melhor chocolate de todos.</p>
+</footer>
+
+</body>
+
+</html>

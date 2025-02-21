@@ -1,0 +1,22 @@
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #551805;
+}
+
+.content .image {
+    width: 45px;
+}
+
+.content .image img {
+    width: 50%;
+}
+.logo {
+    font-family: "Agency FB", sans-serif;
+    color: #CCA37A
+}
+.meu-icone:hover {
+    color: firebrick;
+}
